@@ -1,0 +1,23 @@
+.basic-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.basic-table th,
+.basic-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.product-image {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.status.active {
+  color: #2e7d32;
+  font-weight: 500;
+}

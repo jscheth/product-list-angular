@@ -13,6 +13,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
+import { ProductTableComponent } from '../components/product-table.component';
+
+
 @Component({
   selector: 'app-product-list',
   standalone: true,
@@ -25,6 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatProgressSpinnerModule,
     MatIconModule,
     MatButtonModule,
+    ProductTableComponent,
   ],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
