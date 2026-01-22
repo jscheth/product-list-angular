@@ -63,20 +63,20 @@ export class ProductService {
     const mockProducts: Product[] = [
       {
         id: 1,
-        title: 'Cricut Explore 3',
+        title: 'Machine Tool',
         description: 'Smart cutting machine for DIY crafts.',
         price: 399.99,
         category: 'Machines',
-        imageUrl: 'https://via.placeholder.com/150?text=Explore+3',
+        imageUrl: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=300',
         isActive: true,
       },
       {
         id: 2,
-        title: 'Cricut Maker 3',
+        title: 'Machine Tool Pro',
         description: 'Advanced cutting machine for precision projects.',
         price: 429.99,
         category: 'Machines',
-        imageUrl: 'https://via.placeholder.com/150?text=Maker+3',
+        imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=300',
         isActive: true,
       },
       {
@@ -84,8 +84,8 @@ export class ProductService {
         title: 'EasyPress 2',
         description: 'Heat press for custom vinyl projects.',
         price: 189.99,
-        category: 'Heat+Press',
-        imageUrl: 'https://via.placeholder.com/150?text=EasyPress+2',
+        category: 'Heat Press',
+        imageUrl: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=300',
         isActive: true,
       },
       {
@@ -94,7 +94,7 @@ export class ProductService {
         description: 'Durable vinyl for long-lasting designs.',
         price: 12.99,
         category: 'Materials',
-        imageUrl: 'https://via.placeholder.com/150?text=Vinyl+Roll',
+        imageUrl: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=300',
         isActive: true,
       },
       {
@@ -103,10 +103,11 @@ export class ProductService {
         description: 'Precision blade for detailed cuts.',
         price: 19.99,
         category: 'Accessories',
-        imageUrl: 'https://via.placeholder.com/150?text=Blade',
+        imageUrl: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=300',
         isActive: true,
       },
     ];
+
 
     const shouldFail = Math.random() < 0.1; // 10% chance of error
 

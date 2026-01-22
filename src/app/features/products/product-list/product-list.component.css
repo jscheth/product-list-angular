@@ -50,3 +50,21 @@
   color: #2e7d32;
   font-weight: 500;
 }
+
+.app-header {
+  padding: 24px 24px 0 24px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.app-subtitle {
+  margin: 4px 0 16px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
