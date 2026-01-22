@@ -74,11 +74,5 @@ The service is structured so it can be easily replaced with a real
 npm install
 ng serve
 
----
-
-## 📸 Screenshots
-
-
----
 
 
