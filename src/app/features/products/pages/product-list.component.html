@@ -7,7 +7,7 @@
 
 <div class="product-list-container">
 
-  <!-- 🔍 Toolbar: Search / Filter / Sort -->
+  <!-- Toolbar: Search / Filter / Sort -->
   <div class="toolbar">
     <mat-form-field appearance="outline" class="toolbar-field">
       <mat-label>Search</mat-label>
@@ -41,7 +41,7 @@
     </mat-form-field>
   </div>
 
-  <!-- ⏳ Loading State -->
+  <!-- Loading State -->
   <div class="state-container" *ngIf="isLoading$ | async">
     <mat-progress-spinner
       mode="indeterminate"
@@ -49,17 +49,17 @@
     </mat-progress-spinner>
   </div>
 
-  <!-- ❌ Error State -->
+  <!-- Error State -->
   <div class="state-container error" *ngIf="(error$ | async) as error">
     <mat-icon color="warn">error</mat-icon>
     <span>{{ error }}</span>
   </div>
 
-  <!-- 📦 Product Table -->
+  <!-- Product Table -->
   <ng-container *ngIf="!(isLoading$ | async) && !(error$ | async)">
     <ng-container *ngIf="(visibleProducts$ | async) as products">
 
-      <!-- 🫥 Empty State -->
+      <!-- Empty State -->
       <div class="state-container empty" *ngIf="products.length === 0">
         <mat-icon>inventory_2</mat-icon>
         <p>No products found.</p>

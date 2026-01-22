@@ -74,10 +74,10 @@ export class ProductListComponent implements OnInit {
       map(([products, search, category, sort]) => {
         let result = [...products];
 
-        // 1️⃣ Filter inactive products
+        // Filter inactive products
         result = result.filter((p) => p.isActive);
 
-        // 2️⃣ Apply search (title + description + category)
+        // Apply search (title + description + category)
         if (search) {
           const term = search.toLowerCase();
           result = result.filter(
@@ -88,12 +88,12 @@ export class ProductListComponent implements OnInit {
           );
         }
 
-        // 3️⃣ Apply category filter
+        // Apply category filter
         if (category !== 'all') {
           result = result.filter((p) => p.category === category);
         }
 
-        // 4️⃣ Apply sorting
+        // Apply sorting
         switch (sort) {
           case 'title-asc':
             result.sort((a, b) => a.title.localeCompare(b.title));

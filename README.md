@@ -49,6 +49,7 @@ This is a small Angular application built to demonstrate:
 - No manual subscriptions in components (async pipe only)
 - Mock async API implemented using RxJS `of(...).pipe(delay(...))`
 - Standalone components with localized Angular Material imports
+- Product data is currently hard-coded and exposed as an RxJS stream to simulate a backend API
 
 ---
 
