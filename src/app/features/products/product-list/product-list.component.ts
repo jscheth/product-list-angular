@@ -43,6 +43,7 @@ export class ProductListComponent implements OnInit {
   readonly products$: Observable<Product[]>;
   readonly isLoading$: Observable<boolean>;
   readonly error$: Observable<string | null>;
+  readonly categories$: Observable<string[]>;
 
   // ---- Derived UI Stream ----
   readonly visibleProducts$: Observable<Product[]>;
@@ -111,6 +112,20 @@ export class ProductListComponent implements OnInit {
         return result;
       })
     );
+    
+    this.categories$ = this.products$.pipe(
+      map((products) => {
+        const categories = products
+          .map((p) => p.category)
+          .filter((c): c is string => !!c);
+
+        return ['all', ...Array.from(new Set(categories))];
+      })
+    );
+
+    this.searchControl.valueChanges.subscribe(() => {
+      this.categoryControl.setValue('all', { emitEvent: false });
+    });
   }
 
   ngOnInit(): void {
