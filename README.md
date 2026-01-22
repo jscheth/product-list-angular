@@ -58,3 +58,14 @@ This is a small Angular application built to demonstrate:
 ```bash
 npm install
 ng serve
+
+---
+
+## 📸 Screenshots
+
+### Product List Page
+
+
+### Search & Filter Example
+
+
