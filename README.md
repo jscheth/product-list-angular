@@ -68,6 +68,12 @@ The service is structured so it can be easily replaced with a real
 
 ---
 
+## 📸 Screenshots
+<img width="1680" height="937" alt="Screenshot 2026-01-22 at 3 01 01 PM" src="https://github.com/user-attachments/assets/c3c54a50-ec71-4abf-bd15-9828a9a3863a" />
+<img width="1680" height="934" alt="Screenshot 2026-01-22 at 3 01 23 PM" src="https://github.com/user-attachments/assets/b5fa5c4c-ff34-4c78-a125-98f254f23218" />
+
+---
+
 ## ▶️ How to Run
 
 ```bash
