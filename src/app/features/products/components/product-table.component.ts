@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 
-import { Product } from '../product.model';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-product-table',

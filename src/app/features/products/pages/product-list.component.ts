@@ -4,8 +4,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { combineLatest, Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
-import { Product } from '../product.model';
-import { ProductService } from '../product.service';
+import { Product } from '../models/product.model';
+import { ProductService } from '../services/product.service';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
